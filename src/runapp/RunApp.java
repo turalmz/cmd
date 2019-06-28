@@ -15,6 +15,8 @@ public class RunApp {
 
     public static void main(String[] args) throws IOException {
         Process runtime = Runtime.getRuntime().exec("cmd /c python manage.py runserver");
+        
+        Process runtime1 = Runtime.getRuntime().exec("cmd /c start http://localhost:8080");
     }
     
 }
